@@ -1,0 +1,60 @@
+body{
+  color: whitesmoke;
+  font-size: 27px;
+font-family: 'Heebo Thin' ,serif;
+padding:7px ;
+}
+img{
+ 
+  float: left;
+ 
+}
+h2 , h3, h1{
+color: rgb(248, 138, 147);
+
+ 
+}
+
+#img{
+position: fixed;
+top: 0px;
+left: 0px;
+height:100% ;
+width: 100%;
+z-index:-999;
+opacity: 55%;
+}
+.picR1{
+  border:7px solid  salmon;
+ 
+}
+.picR2{
+  border:7px solid  rgb(255, 170, 160);
+ 
+}
+.picR3{
+  border:7px solid  rgb(238, 181, 175);
+
+}
+table{
+  border-collapse: collapse;
+  
+  }
+  table th{
+    text-align: right;
+      background-color: salmon;
+      color: rgb(114, 137, 101);
+      padding: 4px;
+  }
+
+  table td{
+   border:2px solid black;
+          padding:4px ;
+          font-size: 23px;
+          background-size: 25px;
+   
+    }
+    a{
+      font-size: 20px;
+      color: rgba(226, 255, 251, 0.644);
+    }
