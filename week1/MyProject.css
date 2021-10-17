@@ -2,7 +2,7 @@ body{
   color: whitesmoke;
   font-size: 18px;
 font-family: 'Fb Basis' ,serif;
-  margin:50px;
+  margin-right:250px;
 }
 img{
  
@@ -57,4 +57,5 @@ table{
     a{
       font-size: 20px;
       position:fixed;
+      margin-right:-200px;
     }
