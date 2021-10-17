@@ -2,7 +2,7 @@ body{
   color: whitesmoke;
   font-size: 18px;
 font-family: 'Fb Basis' ,serif;
-  margin-right:250px;
+
 }
 img{
  
@@ -14,6 +14,7 @@ figure{
 }
 h2{
 color: salmon;
+    margin-right:250px;
 
  
 }
@@ -26,20 +27,24 @@ height:100% ;
 width: 100%;
 z-index:-999;
 opacity: 85%;
+    margin-right:250px;
 }
 .picR1{
   border:7px solid rgb(248, 160, 150);
+    margin-right:250px;
 }
 .picR2{
   border:7px solid salmon;
- 
+   margin-right:250px;
 }
 .picR3{
   border:7px solid rgb(255, 85, 66);
+    margin-right:250px;
 
 }
 table{
   border-collapse: collapse;
+    margin-right:250px;
   
   }
   table th{
@@ -54,7 +59,7 @@ table{
           padding:4px ;
    
     }
-    a{
+    li , a{
       font-size: 20px;
       position:fixed;
       margin-right:-200px;
