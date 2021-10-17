@@ -2,11 +2,15 @@ body{
   color: whitesmoke;
   font-size: 18px;
 font-family: 'Fb Basis' ,serif;
+  margin:50px;
 }
 img{
  
-  float: left;
+  float: right;
  
+}
+figure{
+  font-size:30px;
 }
 h2{
 color: salmon;
@@ -52,4 +56,5 @@ table{
     }
     a{
       font-size: 20px;
+      position:fixed;
     }
