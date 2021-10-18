@@ -1,0 +1,33 @@
+body{
+  color: salmon;
+  font-size: 18px;
+font-family: 'Fb Basis' ,serif;
+margin-right:150px;
+text-align: center;
+}
+img{
+ 
+  float: right;
+  margin-right:-150px;
+  
+ 
+}
+#img{
+  position: fixed; 
+  top: 0px;
+  left: 0px;
+  height:100% ;
+  width: 100%;
+  z-index:-999;
+  opacity: 85%;
+  }
+  h1{
+    color:salmon;
+    font-size: 50px;
+    padding-top: 350px;
+ 
+  }
+  h2{
+    color:salmon;
+    font-size:35px;
+  }

@@ -1,0 +1,88 @@
+body{
+  color: whitesmoke;
+  font-size: 18px;
+font-family: 'Fb Basis' ,serif;
+margin-right:150px;
+}
+img{
+ 
+  float: right;
+  margin-right:-150px;
+  
+ 
+}
+h2{
+  color: salmon;
+  }
+  figure{
+    font-size:60px;
+    }
+    .big{
+      font-size:60px;
+      color: salmon;
+      text-align: center;
+      }
+
+#img{
+position: fixed; 
+top: 0px;
+left: 0px;
+height:100% ;
+width: 100%;
+z-index:-999;
+opacity: 85%;
+}
+.picR1,.picR2,.picR3{
+  margin:10px;
+}
+.picR1{
+  border:7px solid rgb(248, 160, 150);
+
+}
+.picR2{
+  border:7px solid salmon;
+ 
+}
+.picR3{
+  border:7px solid rgb(255, 85, 66);
+
+}
+video{
+  border:7px solid rgb(104, 47, 40);
+
+}
+table{
+  border-collapse: collapse;
+  
+  }
+  table th{
+    text-align: right;
+      background-color: salmon;
+      color: rgb(114, 137, 101);
+      padding: 4px;
+  }
+
+  table td{
+   border:2px solid black;
+          padding:4px ;
+   
+    }
+    .a{
+      font-size: 20px;
+      position:fixed;
+      margin-right: -160px;
+    }
+   form,button{
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Fb Basis' ,serif;
+   margin:20px 20px ;
+    }
+    legend{
+      color:salmon;
+    }
+    form{
+      font-size: 22px; 
+      padding-left: 10px ;
+    }
+  
