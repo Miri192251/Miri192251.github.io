@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css" type="text/css">
+    <link rel="shortcut icon" href="Img/600x600_c5af9dae-638d-4d21-aa3c-5eb5de7cb8b1 (2).png" type="image/x-icon">
+    <title>cakeWebSite</title>
+</head>
+<body>
+    <header>
+        <img src="image/600x600_c5af9dae-638d-4d21-aa3c-5eb5de7cb8b1 (2).png" width:5vw>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">בית</a>
+            </li>
+            <li>
+                <a href="about.html">אודות</a>
+            </li>
+            <li>
+                <a href="running.html">העוגות שלנו...</a>
+            </li>
+            <li>
+                <a href="blog.html">בלוג</a>
+            </li>
+            <li>
+                <a href="contact.html">צרו קשר</a>
+            </li>
+   </nav>
+   <main>
+       <div id="form">
+            <form action="" method="get" class="Cake order-form">
+        <div class="Cake-order-form">
+          <label for="name">הכנס שם: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="Cake-order-form">
+          <label for="email">הכנס כתובת אימייל: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <fieldset>
+          <legend> האם תירצו לקבל מאיתנו הודעות באימייל?</legend>
+      
+          <input type="radio" id="jerusalem" name="place">
+          <label for="jerusalem">להצטרפות</label><br/>
+      
+          <input type="radio" id="telaviv" name="place">
+          <label for="telaviv">ליציאה מרשימת התפוצה</label><br/>
+        </fieldset>
+              <label for="ezur">הקלד קוד איזור: </label>
+              <input type="text" name="ezur" id="ezur" required>
+            </div>
+            <form action="" method="get" class="Cake order-form">
+                <div class="Cake-order-form">
+                  <label for="name">הכנס כתובת מגורים: </label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+        <!-- <label for="cake-choice" class="Cake-order-form">איזה סוג עוגה תרצו להזמין?</label>
+<input list="cake-choices" id="cake-choice" name="cake-choice" class="Cake-order-form"/>
+
+<datalist id="cake-choices" >
+    <option value="עוגת שוקולד">
+    <option value="עוגת תותים">
+    <option value="מאפינס שוקולד">
+    <option value="עוגה בטעם קפה">
+    <option value="עוגת שיש">
+</datalist><br> -->
+
+      <details open>
+    <summary>ציינו את האיזור בן אתם גרים:</summary> 
+    <input type="text" name="else" id="else" required>
+</details>
+ 
+<details open class="sum">
+    <summary>לפרטים:</summary>
+    <p class="sum">זמן ההגעה של ההזמנה הוא עד חודש ימי עבודה.</p>
+  </details>
+<input type="submit" value="להזמנה!!" id="order" ><br>
+<p id="howmuch">עד כמה אהבתם את האתר שלנו?</p>
+<div id="range">
+  <input type="range" id="love" name="love"
+         min="0" max="11">
+  <label for="love">אנו מקוות שנהניתן!!</label>
+</div>
+
+<button class="favorites"
+        type="button">
+    Add to favorites
+</button>
+      </form>
+       </div>
+   
+   </main>
+  
+    <footer>
+     
+        <div>
+              <h1> built by Miri Alfa and Chany Marzel © </h1>
+        </div>
+     </footer>
+ 
+  
+</body>
