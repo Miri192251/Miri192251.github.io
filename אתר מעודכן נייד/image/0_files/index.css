@@ -1,0 +1,50 @@
+nav ul li {
+	display: inline-block;
+	margin: 20px 0 0 50px;
+	padding: 0 0 30px 0 ;
+    width: auto;
+
+    
+}
+nav{
+    border-bottom: 2px solid black;
+}
+nav ul li a {
+	color: #000000;
+	font-family: "Fb Rotem";
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 14px;
+margin-right: 50px;
+	padding: 50px ;
+    width: auto;
+    text-decoration: none;
+    letter-spacing:normal;
+}
+
+
+nav ul li a:hover {
+	color: rgb(252 65 111);
+}
+body{
+
+    background-image:url(image/picture.jpg) no-repeat ;
+    background-size:  80%;
+
+  
+   
+    
+ 
+}
+img{
+    float: left;
+    padding: 0 0 0 50px;
+}
+
+body h1{
+      background: url(Img/bg-border2.gif) center bottom;
+
+    background-size:  100%;
+  color: black;
+    font-family: "Fb Rotem";
+}
