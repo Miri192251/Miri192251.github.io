@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="formDiv">
+        <form id="carForm">
+            <h1>Local Storage</h1>
+            <label for="carBrand">Car</label>
+            <input type="text" id="carBrand" placeholder="Car brand" required autofocus><br>
+            <label for="carPrice">Price</label>
+            <input type="text" id="carPrice" placeholder="Price" required><br>
+            <label for="key">Key</label>
+            <input type="text" id="key" placeholder="Key" required><br>
+            <button type="submit">Store Records</button>
+        </form>
+        <br>
+        <label for="retrieveKey">Enter Key to retrieve item</label>
+        <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+        <button id="retrieveButton">Retrieve records</button>
+        <br>
+        <div id="retrieve"></div>
+        <br>
+        <label for="removeKey">Enter Key to delete item</label>
+        <input type="text" id="removeKey" placeholder="removeKey" required><br>
+        <button id="removeButton">Remove record</button>
+        <br>
+        <button id="clearButton">Clear all records</button>
+    </div>
+    <table>
+        <tr>
+            <th>שם:</th>
+            <td>
+                <label for="nameOfWinners"></label>
+                <input type="text" id="nameOfWinners" placeholder="Your Name" required autofocus><br>
+            </td>
+
+        </tr>
+
+        <tr class="addingWinerrs">
+            <th>:מספר נקודות</th>
+            <label for="grade"></label>
+            <input type="text" id="grade" placeholder="Your drade" required autofocus><br>
+        </tr>
+    </table>
+
+
+    <table class="add">
+        <tr>
+            <th>שם:</th>
+            <th>ציון:</th>
+
+
+        </tr>
+
+        <tr>
+            <th>מירי</th>
+            <th>3</th>
+
+
+        </tr>
+
+
+    </table>
+
+
+
+
+
+
+
+    <button id="submit">Remove record</button>
+    <script>
+        let localStorge = function() {
+            debugger;
+            let winName = document.querySelector("#nameOfWinners").value;
+            let winGrade = document.querySelector("#grade").value;
+            let winer = {
+                winName,
+                winGrade
+            }
+            let adding;
+            localStorage.setItem("Winner", JSON.stringify(winer));
+            for (let index = 0; index < 2; index++) {;
+                adding = "<th>" + localStorage.localStorage.getItem(key(index))[0] + "</th>";
+
+            }
+            let finalAddung = "<tr>" + adding + "</tr>";
+            document.querySelector(".add").append(finalAddung);
+
+        }
+
+
+        let numberOfFullLocalStorage = function() {
+
+            while (localStorage.key(i) !== "undefine" && key === Winner) {
+                i++;
+            }
+            return i;
+
+            for (let i = 0; i < localStorage.length; i++) {
+                if (localStorage.key(i) === "undefine")
+                    return i;
+
+
+            }
+        }
+        document.querySelector("#submit").addEventListener('click', localStorge);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/universal.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="index.html">
+                <li>בית</li>
+            </a>
+            <a href="oursGames.html">
+                <li>המשחקים שלנו</li>
+            </a>
+            <a href="contact.html">
+                <li>צור קשר</li>
+            </a>
+
+
+
+
+        </ul>
+    </div>
+
+    <div class="joinOrConent">
+        <form id="Join">
+            <h1>הצטרפות</h1>
+            <label for="userNameJoin">שם משתמש</label><br>
+            <input type="text" id="userNameJoin" placeholder="הזן שם משתמש" required autofocus><br>
+            <label for="passwardJoin">סיסמא</label><br>
+            <input type="password" id="passwardJoin" placeholder="הזן סיסמא" required autofocus><br>
+            <label for="confirmPasswardJoin">אשר סיסמא</label><br>
+            <input type="password" id="confirmPasswardJoin" placeholder="אשר סיסמא" required autofocus><br>
+            <br><br>
+            <button onclick="store()">אישור</button>
+
+        </form>
+
+        <form id="Conect">
+            <h1>התחברות</h1>
+            <label for="userNameConect">שם משתמש</label><br>
+            <input type="text" id="userNameConect" placeholder="הזן שם משתמש" required autofocus><br>
+            <label for="passwardConect">סיסמא</label><br>
+            <input type="password" id="passwardConect" placeholder="הזן סיסמא" required autofocus><br><br><br>
+
+
+            <button onclick="checkIfExsit()">אישור</button>
+
+        </form>
+
+    </div>
+    <div class="alertOfjoinOrContext">
+        <div class="alertJoin">
+            <span class="closebtn modalBox" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+
+            <strong>הצטרפת בהצלחה!</strong><br> <br>
+
+        </div>
+
+        <div class="alertUnJoin">
+            <span class="closebtn modalBox" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+
+            <strong>!שם משתמש כבר קיים במערכת</strong><br> <br>
+
+        </div>
+        <div class="alertERRORJoin">
+            <span class="closebtn modalBox" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+
+            <strong>!סיסמא שגויה</strong><br> <br>
+
+        </div>
+
+
+        <div class="alertConect">
+            <span class="closebtn modalBox" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+            <strong>התחברת בהצלחה!</strong><br> <br>
+
+        </div>
+
+        <div class="alertUnConect">
+            <span class="closebtn modalBox" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+            <strong>שגיאה</strong> <br>שם משתמש אינו קיים במערכת או שאחד הנתונים שהוזנו שגוי
+
+        </div>
+    </div>
+    <script>
+        //window.localStorage.clear()
+
+        function store() {
+            debugger;
+            let passwardJoin = document.querySelector('#passwardJoin').value;
+            let userNameJoin = document.querySelector('#userNameJoin').value;
+            if (passwardJoin.length !== 0 && userNameJoin.length !== 0) {
+
+
+
+                const userDetailsJoin = {
+                    passward: passwardJoin,
+                    grade: 0
+                }
+                if (localStorage.getItem(userNameJoin)) {
+
+                    document.querySelector(".alertUnJoin").style.visibility = "visible";
+                    document.querySelector(".joinOrConent").style.visibility = "hidden";
+                    setTimeout(() => {
+                        document.querySelector(".alertUnJoin").style.visibility = "hidden";
+                        document.querySelector(".joinOrConent").style.visibility = "visible";
+
+                    }, 400000);
+
+                } else {
+                    let firstPassward = document.querySelector("#passwardJoin").value;
+                    let secondPassward = document.querySelector("#confirmPasswardJoin").value;
+                    if (firstPassward === secondPassward) {
+                        window.localStorage.setItem(userNameJoin, JSON.stringify(userDetailsJoin));
+                        document.querySelector(".alertJoin").style.visibility = "visible";
+                        document.querySelector(".joinOrConent").style.visibility = "hidden";
+                        setTimeout(() => {
+                            document.querySelector(".alertJoin").style.visibility = "hidden";
+                            document.querySelector(".joinOrConent").style.visibility = "visible";
+                        }, 400000);
+                    }
+                    else {
+                        document.querySelector(".alertERRORJoin").style.visibility = "visible";
+                        document.querySelector(".joinOrConent").style.visibility = "hidden";
+                        setTimeout(() => {
+                            document.querySelector(".alertERRORJoin").style.visibility = "hidden";
+                            document.querySelector(".joinOrConent").style.visibility = "visible";
+
+                        }, 400000);
+                    }
+
+
+                }
+            }
+
+
+        }
+
+
+        function checkIfExsit() {
+            debugger;
+            let passwardConect = document.querySelector('#passwardConect').value;
+            let userNameConect = document.querySelector('#userNameConect').value;
+            if (passwardConect.length !== 0 && userNameConect.length !== 0) {
+
+                if (localStorage.getItem(userNameConect) && passwardConect === JSON.parse(localStorage.getItem(userNameConect)).passward) {
+                    document.querySelector(".alertConect").style.visibility = "visible"; document.querySelector("#Join").style.visibility = "hidden";
+                    setTimeout(() => {
+                        document.querySelector(".alertConect").style.visibility = "hidden";
+                        document.querySelector(".joinOrConent").style.visibility = "visible";
+
+                    }, 400000)
+                } else {
+                    document.querySelector(".alertUnConect").style.visibility = "visible";
+                    document.querySelector(".joinOrConent").style.visibility = "hidden";
+                    setTimeout(() => {
+                        document.querySelector(".alertUnConect").style.visibility = "hidden";
+                        document.querySelector(".joinOrConent").style.visibility = "visible";
+
+                    }, 400000)
+
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/doubleGameIndex.css">
+    <link rel="stylesheet" href="../css/universal.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="first">
+        <h1>
+            בוא נראה אתכם<br> עושים את זה...</h1>
+        <button class="easy">רמה קלה</button>
+        <button class="hard">רמה קשה</button>
+
+    </div>
+    <main>
+        <h1 class="time">נותרו לך: <span id="countdown">15</span> שניות!</h1>
+        <h1 class=".first">הניקוד שלך: <span id="grade"> 0 </span> !</h1>
+        <div class="container">
+            <div class="circle1 circle">
+
+            </div>
+            <div class="empty"></div>
+            <div class="circle2 circle">
+
+            </div>
+        </div>
+    </main>
+    <!-- <img class="hands" src="../images/clapping_hands.gif" alt=""> -->
+    <a href="index.html"><button class="button" id="homeButton">חזרה לדף הבית</button></a>
+    <button class="button" id="winnersButton">שמירת הניקוד</button>
+    <button class="button" id="startingGameButton">לתחילת המשחק</button>
+
+
+
+    <div class="winner">
+        <span class="closebtn modalBox" onclick="this.parentElement.style.display='none';">&times;
+    </span><br><br><br>
+        <h1>האם ברצונך לשמור את הניקוד שלך?</h1>
+        <h2>הכנס שם משתמש:</h2>
+        <label for="userName"></label>
+        <input type="text" id="userName" placeholder="הזן שם משתמש" required autofocus>
+        <br><button id="gradeOfWinner">אישור</button>
+        <br> הציון הקודם שלך הוא:<span id="prevGrade"></span>
+        <br>הציון הנוכחי שלך הוא:<span id="currentGrade"> </span>
+        <br><button id="updateGrade">עדכון ציון</button> </div>
+    <script src="../javaScript/doubleGameIndex.js "></script>
+</body>
+
+</html>

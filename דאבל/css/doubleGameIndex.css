@@ -1,0 +1,87 @@
+                body {
+                    background: url(../images/firstImage.jpg) no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                
+                main {
+                    display: none;
+                }
+                
+                .timeOver {
+                    padding: 40px;
+                }
+                
+                .circle1,
+                .circle2 {
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 100%;
+                    border: rgb(255, 0, 157) 5px solid;
+                    flex: auto;
+                    display: grid;
+                    grid-gap: 7px;
+                    grid-template-columns: repeat(20, 1fr);
+                    grid-template-rows: 15% 23.5% 23.5% 23% 15%;
+                    align-content: center;
+                    background-color: rgb(255, 0, 157);
+                }
+                
+                .first h1,
+                .first {
+                    font-size: 4.5rem;
+                    color: rgb(219, 64, 116);
+                    display: block;
+                    margin: 3% 3% 0 0;
+                }
+                
+                button {
+                    font-size: 3rem;
+                    margin: 5%;
+                    /* //display: inline; */
+                    color: rgb(5, 3, 4);
+                    text-shadow: black;
+                    background-color: rgb(7, 45, 70);
+                    font-family: "myFont";
+                }
+                
+                .button {
+                    display: none;
+                }
+                
+                .empty {
+                    width: 200px;
+                    height: 200px;
+                    flex: auto;
+                }
+                
+                .hands {
+                    width: 400px;
+                    height: 400px;
+                    margin: auto auto auto 50%;
+                    display: none;
+                }
+                
+                .container {
+                    display: inline-flex;
+                    padding: 2% 15% 0 0%;
+                }
+                
+                #countdown {
+                    font-size: 150px;
+                }
+                
+                h1 {
+                    margin: 3% 4%;
+                    color: rgb(255, 0, 157);
+                    display: inline;
+                    /* font-family: "Noot"; */
+                    font-size: 4rem;
+                }
+                
+                .timeOver {
+                    color: rgb(255, 0, 157);
+                    margin: 7% 4%;
+                    display: inline;
+                    font-size: 150px;
+                }
